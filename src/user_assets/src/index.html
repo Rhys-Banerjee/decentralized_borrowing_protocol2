@@ -16,5 +16,147 @@
         <button id="clickMeBtn">Click Me!</button>
     </section>
     <section id="greeting"></section>
+    <div id="container">
+        <div id="header">
+            <div id="Current Collateral Ratio"></div>
+            <div id="Display ICP"></div>
+            <div id="SDR Outstanding"></div>
+        </div>
+        <div id="main-content">
+            <ul id="methods">
+                <li id="Create Account">
+                    <div class="signature">
+                        <b>Create Account</b>
+                    </div>
+                    <div class="input-container">
+                        <span>
+                            <input class="argument" placeholder="Name" autocomplete="off" id="accntInput">
+                            <span class="status"></span>
+                        </span>
+                    </div>
+                    <div class="button-container" id="accntBtn">
+                        <button class="btn" id="test">Submit</button>
+                    </div>
+                    <div class="result" style="display:flex;" id="accntResult"></div>
+                    <div class="left">
+                        <div class="text-result" style="display: flex;"></div>
+                        <div class="ui-result" style="display:none;"></div>
+                        <div class="json-result" style="display: none;">undefined</div>
+                    </div>
+                </li>
+                <li id="Create Trove">
+                    <div class="signature">
+                        <b>Create Trove</b>
+                    </div>
+                    <div class="input-container"></div>
+                    <div class="button-container">
+                        <button class="result" id="TroveBtn">Open Trove</button>
+                    </div>
+                    <div class="result" style="display:flex;" id="Trove-Result"></div>
+                    <div class="left">
+                    </div>
+                </li>
+                <li id="Deposit ICP">
+                    <div class="signature">
+                        <b>Deposit ICP</b>
+                    </div>
+                    <div class="input-container">
+                        <span>
+                            <input class="argument" placeholder="Enter Amount" autocomplete="off" id="ICPInput">
+                            <span class="status"></span>
+                        </span>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn" id="ICPDepBtn">Deposit</button>
+                    </div>
+                    <div class="result" style="display:flex;" id="ICPResults"></div>
+
+                    <div class="left">
+                    </div>
+                </li>
+                <li id="Deposit SDR">
+                    <div class="signature">
+                        <b>Deposit SDR</b>
+                    </div>
+                    <div class="input-container">
+                        <span>
+                            <input class="argument" placeholder="Name" autocomplete="off" id="SDRInput">
+                            <span class="status"></span>
+                        </span>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn" id="SDRDepBtn">Deposit</button>
+                    </div>
+                    <div class="result" style="display:flex;" id="SDRResults">
+                        <span class="result-buttons">
+                        </span>
+                    <div class="left">
+                        <div class="text-result" style="display: flex;"></div>
+                        <div class="ui-result" style="display:none;"></div>
+                        <div class="json-result" style="display: none;">undefined</div>
+                    </div>
+                </li>
+                <li id="Withdraw ICP">
+                    <div class="signature">
+                        <b>Withdraw ICP</b>
+                    </div>
+                    <div class="input-container">
+                        <span>
+                            <input class="argument" placeholder="Name" autocomplete="off" id="ICPWithInput">
+                            <span class="status"></span>
+                        </span>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn" id="ICPWithBtn">Withdraw</button>
+                    </div>
+                    <div class="result" style="display:flex;" id="ICPWithResults"></div>
+                        <span class="result-buttons">
+                        </span>
+                    <div class="left">
+                        <div class="text-result" style="display: flex;"></div>
+                        <div class="ui-result" style="display:none;"></div>
+                        <div class="json-result" style="display: none;">undefined</div>
+                    </div>
+                </li>
+                <li id="Withdraw SDR">
+                    <div class="signature">
+                        <b>Withdraw SDR</b>
+                    </div>
+                    <div class="input-container">
+                        <span>
+                            <input class="argument" placeholder="Name" autocomplete="off" id="SDRWithInput">
+                            <span class="status"></span>
+                        </span>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn" id="SDRWithBtn">Withdraw</button>
+                    </div>
+                    <div class="result" style="display:flex;" id="SDRWithResults"></div>
+                        <span class="result-buttons">
+                        </span>
+                    <div class="left">
+                        <div class="text-result" style="display: flex;"></div>
+                        <div class="ui-result" style="display:none;"></div>
+                        <div class="json-result" style="display: none;">undefined</div>
+                    </div>
+                    <li id="Close Trove">
+                        <div class="signature">
+                            <b>Close Trove</b>
+                        </div>
+                        <div class="input-container"></div>
+                        <div class="button-container">
+                            <button class="result" id="CloseTroveBtn">Close Trove</button>
+                        </div>
+                        <div class="result" style="display:flex;" id="CloseTroveResult"></div>
+                        <div class="left">
+                        </div>
+                    </li>
+                </li>
+            </ul>
+        </div>
+        <div class="javascript-test">
+            <p id="trove-test"></p>
+        </div>
+    </div>
 </body>
 </html>
